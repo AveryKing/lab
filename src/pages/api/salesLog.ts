@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { NextApiRequest, NextApiResponse } from "next";
 import { env } from "../../env/server.mjs";
 
