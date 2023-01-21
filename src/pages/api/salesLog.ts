@@ -14,7 +14,8 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
       `/api/trpc/group.salesLog?batch=1&input={"0":{"json":{"groupId":"${group}"}}}`
   )
     .then((res) => res.json())
-    .then((data) => res.json(data));
+    .then((data) => res.json(data))
+    .catch((err) => res.json(err));
 };
 
 export default handler;
